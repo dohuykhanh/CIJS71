@@ -17,3 +17,11 @@ const creatures = [
    { name: "Monkey", habitat: "Jungle" },
  ];
  let sea = creatures.filter((item) => item.habitat === "Ocean");
+ //BÀI 3
+           const numbers = [1, 3, 6, 8, 11];
+         let number = numbers.filter(function(number) {
+                 return number > 7;
+            
+             })     
+
+             console.log(number)
