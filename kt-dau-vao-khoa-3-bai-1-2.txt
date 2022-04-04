@@ -1,0 +1,58 @@
+// CAU1:
+const INPUT=[2,3,-5,-2,4];
+let MAX=INPUT[0]*INPUT[1];
+let a=0;
+let b=0;
+for(let i =0; i<INPUT.length-1; i++){
+        if(MAX < INPUT[i]*INPUT[i+1]){
+            MAX=INPUT[i]*INPUT[i+1];
+            a=INPUT[i];
+            b=INPUT[i+1];
+            
+        }
+            
+        
+}
+console.log("GIA tri lon nhat: " + MAX);
+        console.log("CAp so la: so thu nhat " + a +"so thu hai la" +b);
+
+
+//CAU2:
+
+const input1=[60,40,55,75,64];
+let mang1=[];
+let mang2=[];
+let tong1=0;let tong2=0;
+
+for(let i=0; i<input1.length;i++){
+    if(i%2==0){
+        
+            mang1.push(input1[i]);
+        
+    }else{ mang2.push(input1[i]);
+    }
+        
+}
+
+for(let k=0;k<mang1.length;k++){
+tong1 = tong1+mang1[k];
+}
+console.log("tong can nag mang 1: "+tong1);
+
+for(let h=0;h<mang2.length;h++){
+tong2 = tong2+mang2[h];
+}
+console.log("tong can nang mang 2: "+ tong2);
+//CAU3:
+
+// async function getData(){
+    
+//     try {
+//     const request= await fetch("https://api.shrtco.de/v2/");
+//     const response =  await request.json();
+//     return response.data;
+//     console.log(response.data);
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
